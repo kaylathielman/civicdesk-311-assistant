@@ -1,0 +1,60 @@
+{
+  "config": {
+    "run_name": "dpo_v2",
+    "sft_adapter": "sft_v1",
+    "beta": 0.5,
+    "lr": 5e-06,
+    "epochs": 1.0,
+    "batch_size": 4,
+    "grad_accum": 2,
+    "n_pairs": 150,
+    "train_file": "preference_v2_train.jsonl",
+    "val_file": "preference_v2_val.jsonl",
+    "n_val_pairs": 20,
+    "reference": "frozen copy of sft_v1"
+  },
+  "train_loss": 0.4194,
+  "steps": 19,
+  "final_val": {
+    "eval_loss": 0.2681,
+    "eval_rewards/chosen": -0.0227,
+    "eval_rewards/rejected": -1.5622,
+    "eval_rewards/accuracies": 0.9,
+    "eval_rewards/margins": 1.5395
+  },
+  "reward_log": [
+    {
+      "step": 10,
+      "loss": 0.5617,
+      "rewards/margins": 0.3485,
+      "rewards/accuracies": 0.7875,
+      "rewards/chosen": -0.0266,
+      "rewards/rejected": -0.375
+    },
+    {
+      "step": 10,
+      "split": "val",
+      "loss": 0.324,
+      "rewards/accuracies": 0.95,
+      "rewards/margins": 1.2057
+    },
+    {
+      "step": 19,
+      "split": "val",
+      "loss": 0.2681,
+      "rewards/accuracies": 0.9,
+      "rewards/margins": 1.5395
+    },
+    {
+      "step": 19,
+      "split": "val",
+      "loss": 0.2681,
+      "rewards/accuracies": 0.9,
+      "rewards/margins": 1.5395
+    }
+  ],
+  "ref_unchanged": true,
+  "ref_matches_sft": true,
+  "peak_mem_gb": 3.686,
+  "wall_clock_s": 38.4
+}

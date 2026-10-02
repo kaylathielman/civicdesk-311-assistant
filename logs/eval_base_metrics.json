@@ -1,0 +1,40 @@
+{
+  "model": "base",
+  "adapter": null,
+  "test": {
+    "n": 30,
+    "json_strict_%": 100.0,
+    "json_parseable_%": 100.0,
+    "schema_exact_keys_%": 100.0,
+    "category_acc_%": 16.7,
+    "urgency_acc_%": 36.7,
+    "fabrication_rate_%": 0.0,
+    "fabrication_counts": "0/9 (invented 0, misfiled 0, unparseable 0)",
+    "location_fabrication_%": 16.7,
+    "location_fabrication_counts": "5/30",
+    "any_fabrication_%": 16.7,
+    "any_fabrication_counts": "5/30",
+    "unparseable_salvaged_for_fabrication": 0,
+    "false_null_rate_%": 81.0,
+    "false_null_counts": "17/21 (unparseable 0)",
+    "address_exact_%": 19.0
+  },
+  "probe": {
+    "n": 20,
+    "json_strict_%": 100.0,
+    "json_parseable_%": 100.0,
+    "schema_exact_keys_%": 100.0,
+    "category_acc_%": 30.0,
+    "urgency_acc_%": 35.0,
+    "fabrication_rate_%": 0.0,
+    "fabrication_counts": "0/10 (invented 0, misfiled 0, unparseable 0)",
+    "location_fabrication_%": 15.0,
+    "location_fabrication_counts": "3/20",
+    "any_fabrication_%": 15.0,
+    "any_fabrication_counts": "3/20",
+    "unparseable_salvaged_for_fabrication": 0,
+    "false_null_rate_%": 100.0,
+    "false_null_counts": "10/10 (unparseable 0)",
+    "address_exact_%": 0.0
+  }
+}

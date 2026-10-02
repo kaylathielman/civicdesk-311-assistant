@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Model caches (Hugging Face downloads live outside the repo by default; ignore if redirected here)
+.cache/
+hf_cache/
+huggingface/
+*.bin
+!adapters/**/*.bin
+
+# Training checkpoints and trainer scratch dirs (final adapters in adapters/ are kept)
+logs/trainer_tmp/
+checkpoint-*/
+**/checkpoint-*/
+runs/
+wandb/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/

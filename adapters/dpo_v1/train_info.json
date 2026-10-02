@@ -1,0 +1,52 @@
+{
+  "config": {
+    "run_name": "dpo_v1",
+    "sft_adapter": "sft_v1",
+    "beta": 0.1,
+    "lr": 2e-05,
+    "epochs": 2,
+    "batch_size": 4,
+    "grad_accum": 2,
+    "n_pairs": 150,
+    "reference": "frozen copy of sft_v1"
+  },
+  "train_loss": 0.1745,
+  "steps": 38,
+  "reward_log": [
+    {
+      "step": 10,
+      "loss": 0.4787,
+      "rewards/margins": 0.6951,
+      "rewards/accuracies": 0.9375,
+      "rewards/chosen": -0.0291,
+      "rewards/rejected": -0.7242
+    },
+    {
+      "step": 20,
+      "loss": 0.1143,
+      "rewards/margins": 3.057,
+      "rewards/accuracies": 1.0,
+      "rewards/chosen": -0.3828,
+      "rewards/rejected": -3.4398
+    },
+    {
+      "step": 30,
+      "loss": 0.0419,
+      "rewards/margins": 4.3886,
+      "rewards/accuracies": 1.0,
+      "rewards/chosen": -0.8453,
+      "rewards/rejected": -5.2338
+    },
+    {
+      "step": 38,
+      "rewards/margins": 4.7313,
+      "rewards/accuracies": 1.0,
+      "rewards/chosen": -0.7262,
+      "rewards/rejected": -5.4576
+    }
+  ],
+  "ref_unchanged": true,
+  "ref_matches_sft": true,
+  "peak_mem_gb": 3.739,
+  "wall_clock_s": 57.7
+}

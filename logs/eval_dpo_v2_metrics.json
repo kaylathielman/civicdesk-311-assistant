@@ -1,0 +1,40 @@
+{
+  "model": "dpo_v2",
+  "adapter": "../adapters/dpo_v2",
+  "test": {
+    "n": 30,
+    "json_strict_%": 100.0,
+    "json_parseable_%": 100.0,
+    "schema_exact_keys_%": 100.0,
+    "category_acc_%": 90.0,
+    "urgency_acc_%": 40.0,
+    "fabrication_rate_%": 22.2,
+    "fabrication_counts": "2/9 (invented 0, misfiled 2, unparseable 0)",
+    "location_fabrication_%": 3.3,
+    "location_fabrication_counts": "1/30",
+    "any_fabrication_%": 10.0,
+    "any_fabrication_counts": "3/30",
+    "unparseable_salvaged_for_fabrication": 0,
+    "false_null_rate_%": 0.0,
+    "false_null_counts": "0/21 (unparseable 0)",
+    "address_exact_%": 90.5
+  },
+  "probe": {
+    "n": 20,
+    "json_strict_%": 100.0,
+    "json_parseable_%": 100.0,
+    "schema_exact_keys_%": 100.0,
+    "category_acc_%": 80.0,
+    "urgency_acc_%": 50.0,
+    "fabrication_rate_%": 20.0,
+    "fabrication_counts": "2/10 (invented 0, misfiled 2, unparseable 0)",
+    "location_fabrication_%": 0.0,
+    "location_fabrication_counts": "0/20",
+    "any_fabrication_%": 10.0,
+    "any_fabrication_counts": "2/20",
+    "unparseable_salvaged_for_fabrication": 0,
+    "false_null_rate_%": 0.0,
+    "false_null_counts": "0/10 (unparseable 0)",
+    "address_exact_%": 90.0
+  }
+}
